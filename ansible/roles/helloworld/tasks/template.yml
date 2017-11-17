@@ -1,0 +1,4 @@
+---
+
+- name: Create a Jinja2 template
+  template: src="addr.j2" dest="/tmp/test.txt"

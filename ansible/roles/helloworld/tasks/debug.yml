@@ -1,0 +1,5 @@
+---
+
+- name: Create /etc/hosts file
+  debug: 
+    msg: "blah blah blah {{ my_list[1] }} {{ mgmt_acl['vty'][0] }}"

@@ -1,0 +1,6 @@
+Hello Mr. Tucker I am showing you the example below:
+Hostname {{ router_name }}
+
+{{ mgmt_acl['vty'][0] }}
+{{ mgmt_acl['vty'][0] | ipaddr('network') }} {{ mgmt_acl['vty'][0] | ipaddr('netmask') }}
+

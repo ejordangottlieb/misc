@@ -1,0 +1,13 @@
+---
+router_name: olt01blvlil
+region: central
+sec_group: default
+os_key_name: base_key
+ostack_ansible_group: "charter_ansible_group=api,charter_consul=server"
+charter_clusterid: "charter_cluster=1"
+os_image: centos7x86_64
+os_flavor: C4-M8-S40
+os_net: citadelNet
+my_list:
+  - list value 0
+  - list value 1

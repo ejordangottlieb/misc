@@ -1,0 +1,10 @@
+# This is dynamically template file
+This is just a plane static line
+
+{{ env_git_ip }} {{ env_git_host }} {{ env_git_alias }}
+{% for item in groups['all'] %}
+{% if 'localhost' in item %}
+{% else %}
+{{ hostvars[item]['ansible_ssh_host'] }} {{ item }}
+{% endif %}
+{% endfor %}
